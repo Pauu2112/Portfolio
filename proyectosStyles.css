@@ -56,10 +56,10 @@ body {
   align-items: center;
   width: 100vw;
   margin-top: 10vh;
-  max-width: 1400px;       /* Limita el ancho */
-  margin: 0 auto;         /* Centra horizontalmente */
-  word-wrap: break-word;  /* Evita que el texto se desborde */
-  padding: 20px;          /* Espacio interior para que respire */
+  max-width: 1400px;       
+  margin: 0 auto;         
+  word-wrap: break-word;  
+  padding: 20px;          
   box-sizing: border-box;
 }
 
