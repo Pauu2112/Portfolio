@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #2b497780;
+    position: fixed;
+    color: white;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: start;
+    background: #a6c2eb;
+    color: #2b4977;
+    padding-left: 10%;
+    padding-right: 0%;
+}
+
+#landing div {
+    width: 40%;
+    align-self: center;
+}
+
+#landing h1 {
+    font-size: 4rem;
+    text-align: start;
+    border-bottom: 1px solid #2b4977;
+    margin-bottom: 1rem;
+    letter-spacing: -4px;
+    animation: float 3s ease-in-out infinite;
+
+}
+
+#landing img {
+    width: 60%;
+    height: auto;
+    margin-left: 2rem;
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.486));
+    animation: float 5s ease-in-out infinite;
+}
+
+#landing h3 {
+    font-size: 1.8rem;
+    text-align: start;
+}
+
+#landing div button {
+    background-color: #2b4977;
+    color: white;
+    border: none;
+    padding: 1rem 1.3rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.4vh;
+    transition: all 0.3s ease;
+}
+
+#landing div button:hover {
+    background-color: #1e3a6d;
+    transform: translateY(-2px);
+}
+
+.fade{
+    background: linear-gradient(#a6c2eb, white);
+    height: 10vh;
+}
+
+#Languages {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+#Languages h4 {
+    margin-top: 6vh;
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#Languages h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2b4977;
+    margin-bottom: 5px;
+}
+
+#Languages h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+#Languages div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+#Languages > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #d7e2f7;
+    border-radius: 30px;
+    padding-block: 20px;
+    padding-inline: 10px;
+    width: 108px;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+    transform: translateY(30px);
+
+}
+
+#Languages > div > div.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#Languages > div > div:hover {
+    transform: translateY(-10px);
+}
+
+#Languages img {
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#Languages h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Estilos para la sección de Curriculum */
+
+#about {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #2b4977;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.column {
+    flex: 1;
+    min-width: 280px;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.center-img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.center-img img {
+    max-height: 500px;
+    width: auto;
+}
+
+#about h3 {
+    font-size: 1.4rem;
+    color: #2b4977;
+    border-bottom: 1px solid #2b4977;
+    padding-bottom: 5px;
+}
+
+.entry h4 {
+    font-size: 1rem;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.entry p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.list,
+.icons,
+.software {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.icons li {
+    background: #f0f4fb;
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: #2b4977;
+}
+
+/* Animación de scroll para títulos */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Animacion de flotante*/
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
